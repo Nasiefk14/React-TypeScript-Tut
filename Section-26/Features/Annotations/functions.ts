@@ -14,3 +14,7 @@ const multiple = function(a: number, b: number) : number {
 }
 // ABove examples show that whether we use a name function(line 9) or we use a anonymous function(line 12) we always assing a type with a return value
 
+const logger = (message: string) : void => {
+    console.log(message);
+};
+// We use the void type when the function return nothing as this consol.log shows us
