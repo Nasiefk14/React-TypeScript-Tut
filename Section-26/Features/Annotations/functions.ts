@@ -18,3 +18,15 @@ const logger = (message: string) : void => {
     console.log(message);
 };
 // We use the void type when the function return nothing as this consol.log shows us
+
+const forecast = {
+    date: new Date(),
+    weather: 'Sunny'
+};
+
+const logWeather = ({ date, weather }: {date:Date, weather : string}) : void => {
+    console.log(date);
+    console.log(weather);
+}
+logWeather(forecast)
+// We added function descructuring using types so we add the desctructing first in the curly braces and then the 
