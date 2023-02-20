@@ -10,3 +10,6 @@ const carsBymake = [
 const carsBymaker : string[][] = [];
 // WE have the same example as above where we need to inililise when there is no data inside but we have here an array of string arrays
 
+const flexiDate: (Date | String)[] = [new Date()];
+// WE see in the example aboee we are able to assign two types to the date so it will be able toi take either or value in the array
+// These are called flexible types
