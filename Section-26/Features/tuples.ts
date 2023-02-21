@@ -11,4 +11,6 @@ const pepsi: [string, boolean, number] = ['brown',true,40];
 // Can be redone using the tuple type
 
 const sprite: Drink = ['clear', true, 22]
-// This example above uses the tuple as a type\
+// This example above uses the tuple as a type
+
+// STILL VERY MUCH CONFUSED WITH TUPLES
