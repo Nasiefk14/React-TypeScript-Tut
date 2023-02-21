@@ -1,9 +1,9 @@
 class Vehicle {
-    drive(): void {
+    public drive(): void {
         console.log('Chugga Chugga');
     }
 
-    honk(): void {
+    public honk(): void {
         console.log('Beep Beep!')
     }
 };
@@ -16,9 +16,15 @@ vehicle.honk();
 // Since we created vehicle as a new Vehicle we have all the functions attached to Vehicle too it
 
 class Car extends Vehicle {
-    drive(): void {
+    // We are getting the error here because we are trying to override a parent method from the Vehicle class
+    private drive(): void {
         console.log('Vroooo Paaaa');
     }
+
+    startDriving() : void {
+        this.drive()
+    }
+    // We set the drive method to be private so we cant call it outside the funtion, 
 };
 // We add on the extends keyword which allows us to make a new class name Car but with the properties of Vehicle class already added
 
