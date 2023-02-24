@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import UserSearch from './state/UserSearch';
+import EventComponent from './events/EventComponent';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(
 
 const App = () => {
   return(
-      <UserSearch/>
+      <EventComponent/>
   )
 }
 
