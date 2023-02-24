@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Parent from './props/Parent';
+import UserSearch from './state/UserSearch';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -8,11 +8,7 @@ const root = ReactDOM.createRoot(
 
 const App = () => {
   return(
-    <div>
-      <h1>React BoilerPlate Boois</h1>
-      <h3>Space</h3>
-      < Parent />
-     </div>
+      <UserSearch/>
   )
 }
 
